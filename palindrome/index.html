@@ -1,0 +1,57 @@
+<!-- Rain Obrien made this :) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page title -->
+  <title>Palindrome Checker</title>
+
+  <style>
+    /* Center everything on the page */
+    body {
+      text-align: center;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Add some space around the input */
+    input {
+      margin: 10px;
+      padding: 5px;
+      width: 250px;
+    }
+
+    /* Style the result message */
+    #result {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page heading -->
+  <h1>Palindrome Checker</h1>
+
+  <!-- Short description -->
+  <p>Enter a word or phrase to see if it's a palindrome!</p>
+
+  <!-- Form with text input and submit button -->
+  <form id="palindromeForm">
+
+    <!-- Text box for user input -->
+    <input type="text" id="wordInput" placeholder="e.g. racecar">
+
+    <!-- Submit button -->
+    <button type="submit">Check</button>
+
+  </form>
+
+  <!-- Result will be shown here using innerHTML -->
+  <div id="result"></div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="palindrome.js"></script>
+
+</body>
+</html>
