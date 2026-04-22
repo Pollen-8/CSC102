@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Rain Obrien made this page -->
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- Page title shown in browser tab -->
+<title>CSC102 - User Experience</title>
+
+<!-- Link to external stylesheet -->
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<!-- Link external JavaScript, deferred so DOM loads first -->
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- Main page heading -->
+<h1>Welcome to my website!</h1>
+
+<!-- Subtitle paragraph -->
+<p class="subtext1">
+    It's a little barren, right now, but here's a meme for the meanwhile:
+</p>
+
+<!-- Meme image that will be moved by JavaScript -->
+<p>
+    <img id="meme1" src="https://i.imgflip.com/212t5u.jpg" alt="Meme">
+</p>
+
+<!-- Work in progress image -->
+<p>
+    <img id="wip1" src="https://www.vhv.rs/dpng/d/487-4873849_work-in-progress-website-hd-png-download.png" width="150" height="150" alt="Work in progress">
+</p>
+
+<!-- Background audio element (hidden, controlled via JavaScript) -->
+<audio id="bgAudio" loop>
+    <source src="us-lab-background.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Click sound audio element played when the meme image is clicked -->
+<audio id="clickAudio">
+    <source src="us-lab-background.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Button form (onsubmit prevents page reload) -->
+<form onsubmit="return false;">
+
+    <!-- Start button: triggers meme movement and audio -->
+    <button id="startBtn" type="submit">Start</button>
+
+    <!-- Stop button: halts movement and audio (disabled initially) -->
+    <button id="stopBtn" type="submit" disabled>Stop</button>
+
+</form>
+
+<!-- Status message updated dynamically by JavaScript -->
+<p id="statusMsg"></p>
+
+</body>
+</html>
