@@ -1,12 +1,8 @@
-// Grab the form and result div from the page
-const form = document.getElementById('palindromeForm');
-const result = document.getElementById('result');
+// Named function called by the button's onclick
+function checkPalindrome() {
 
-// Run this when the form is submitted
-form.addEventListener('submit', function(event) {
-
-  // Stop the page from refreshing
-  event.preventDefault();
+  // Grab the result div from the page
+  const result = document.getElementById('result');
 
   // Get the user's input
   const raw = document.getElementById('wordInput').value;
@@ -31,4 +27,4 @@ form.addEventListener('submit', function(event) {
     // It is not a palindrome
     result.innerHTML = '<span style="color: red;">No, "' + raw + '" is not a palindrome.</span>';
   }
-});
+}
