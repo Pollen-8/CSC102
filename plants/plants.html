@@ -1,0 +1,72 @@
+<!-- Made by Rain :) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page title -->
+  <title>Plant Manager</title>
+
+  <style>
+    /* Center everything on the page */
+    body {
+      text-align: center;
+      background-color: #f0fff0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the unordered list */
+    ul {
+      list-style-type: disc;
+      display: inline-block;
+      text-align: left;
+    }
+
+    /* Make list items clickable-looking */
+    li {
+      cursor: pointer;
+      margin: 4px 0;
+    }
+
+    /* Add space around the input */
+    input {
+      margin: 10px;
+      padding: 5px;
+      width: 200px;
+    }
+
+    /* Style the message div */
+    #divMessage {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page heading -->
+  <h1>ðŸŒ¿ Plant Manager</h1>
+
+  <!-- Instructions for deleting a plant -->
+  <p>To delete a plant, click on its name.</p>
+
+  <!-- Unordered list where plants will be displayed -->
+  <ul id="ulPlants"></ul>
+
+  <!-- Form to add a new plant -->
+  <form id="addPlantForm">
+
+    <!-- Text input for the new plant name -->
+    <input type="text" id="textNewPlant" placeholder="Enter a plant name">
+
+    <!-- Button calls addPlant from plants.js -->
+    <button type="button" onclick="addPlant()">Add Plant</button>
+
+  </form>
+
+  <!-- Messages to the user will appear here via innerHTML -->
+  <div id="divMessage"></div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="plants.js"></script>
+
+</body>
+</html>
